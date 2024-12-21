@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/Veranix.jpg">
+    <title>Store</title>
+</head>
+<body>
+    <div id="bg">
+    <div class="container">
+        <h1>Mahsulotlar</h1>
+        <div class="sel">
+            <select id="n1">
+                <option value="Barchasi">Barchasi</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Jewelery">Jewelery</option>
+                <option value="Men's clothing">Mens</option>
+                <option value="Women's clothing">Women's clothing</option>
+            </select>
+            <select id="n2">
+                <option value="Narxi">Narxi</option>
+                <option value="↑">↑</option>
+                <option value="↓">↓</option>
+            </select>
+            <input type="text" id="search" placeholder="Mahsulotlar qidirish ...">
+        </div>
+        <div id="cards">
+            <div class="advanced-loader">
+                <div class="circle"></div>
+                <div class="text">Loading...</div>
+              </div>
+            <!-- <div class="card">
+                <img src="" alt="" width="200">
+                <h2>Name</h2>
+                <p>Kat</p>
+                <h4>Narxi: xx</h4>
+            </div> -->
+        </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>

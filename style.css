@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+#bg{
+    background-image: url(./img/wallpaper\(6\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+
+body {
+    background-color: rgb(84, 107, 99);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-size: 54px;
+    padding: 40px 0;
+}
+
+.sel {
+    text-align: center;
+    #n1 {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        margin: 0px 20px;
+    }
+    #n2 {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        margin: 0px 20px;
+    }
+    #search {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        margin: 0px 20px;
+        outline: none;
+    }
+    input::placeholder{
+        color: rgb(45, 45, 45);
+        text-decoration: underline;
+    }
+}
+#cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+    .card {
+        padding: 20px 40px;
+        border: 1px solid rgba(79, 79, 79, 0.332);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        width: 320px;
+        height: 450px;
+        text-align: center;
+        transition: 0.7s;
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            opacity: 0.7;
+        }
+        h4 {
+            color: rgb(3, 230, 22);
+            font-size: 24px;
+        }
+        img {
+            max-height: 300px;
+            border-radius: 20px;
+        }
+    }
+    .card:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.advanced-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #f1c40f;
+    border-radius: 50%;
+    animation: spin-reverse 1.5s linear infinite;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-left: 5px solid #e74c3c;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.text {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes fadeIn {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
